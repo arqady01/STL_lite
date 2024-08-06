@@ -1,14 +1,14 @@
 # 深度探索list
 
-图片1
+![list1](https://github.com/arqady01/STL_lite/blob/main/list/list1.png)
 
-图片2
+![list2](https://github.com/arqady01/STL_lite/blob/main/list/list2.png)
 
 我们希望iterator模拟指针，因为list是非连续空间，`node++`毫无意义，它不知道加到（指向）何处，必须要进入node内部，调用next指针才行，即`(*node).next`
 
 **list的迭代器**
 
-图片
+![g2.9_iterator](https://github.com/arqady01/STL_lite/blob/main/list/g2.9_iterator.png)
 
 ### iterator 设计原则
 
@@ -18,9 +18,10 @@ iterator必须有能力回答algorithm的提问
 
 **iterator必须提供的五种相关类型**
 
-图片5
+![iterator_five_category](https://github.com/arqady01/STL_lite/blob/main/list/iterator_five_category.png)
 
 但如果iterator不是class而是一个退化的iterator呢？
 
 定义一个萃取机制，使其有能力分辨是iterator还是pointer----利用偏特化即可解决
 
+![iterator_extra]https://github.com/arqady01/STL_lite/blob/main/list/iterator_extra.jpg)
