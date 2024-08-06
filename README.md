@@ -2,6 +2,8 @@
 
 ![list1](https://github.com/arqady01/STL_lite/blob/main/list/list1.png)
 
+![list1](list/list1.png)
+
 ![list2](https://github.com/arqady01/STL_lite/blob/main/list/list2.png)
 
 我们希望iterator模拟指针，因为list是非连续空间，`node++`毫无意义，它不知道加到（指向）何处，必须要进入node内部，调用next指针才行，即`(*node).next`
