@@ -24,4 +24,4 @@ iterator必须有能力回答algorithm的提问
 
 定义一个萃取机制，使其有能力分辨是iterator还是pointer----利用偏特化即可解决
 
-![iterator_extra]https://github.com/arqady01/STL_lite/blob/main/list/iterator_extra.jpg)
+![iterator_extra](https://github.com/arqady01/STL_lite/blob/main/list/iterator_extra.jpg)
