@@ -28,7 +28,7 @@ iterator必须有能力回答algorithm的提问
 
 ![iterator_extra_code1](list/iterator_extra_code1.png)
 
-完整版：
+**完整版：**
 
 ![iterator_extra_code2](list/iterator_extra_code2.png)
 
@@ -36,9 +36,7 @@ iterator必须有能力回答algorithm的提问
 
 ![vector_model](vector/vector_model.png)
 
-
-
-**尾插**
+**尾插push_back**
 
 ```cpp
 void push_back(const T& x) {
@@ -72,3 +70,8 @@ char* uninitialized_copy(char* f, *l, *result) {
     memmove(result, f, l - f);
     return result + (l - f); //重要
 }
+
+
+**iterator的设计**
+
+![vector_model](vector/iteratorGnuc4.png)
