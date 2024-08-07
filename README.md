@@ -31,3 +31,46 @@ iterator必须有能力回答algorithm的提问
 完整版：
 
 ![iterator_extra_code2](list/iterator_extra_code2.png)
+
+========================
+
+# 探索vector
+
+![vector_model](vector/vector_model.png)
+
+
+
+**尾插**
+
+```cpp
+void push_back(const T& x) {
+    if (finish != end_of_storage) { //还有空间
+        construct(finish, x); //全局函数，将finish设为x，但暂时不关心如何实现
+        ++finish; //调整finish指针
+    } else { //空间不足，需要扩容
+        insert_aux(end(), x);
+    }
+}
+
+template<class T, class Alloc>
+void vector<T, Alloc>::insert(iterator position, const T& x) {
+    const size_type old_size = size();
+    const size_type len = old_size != 0 ? 2 * old_size : 1;
+
+    iterator new_start = data_allocator::allocate(len);
+    iterator new_finish = new_start;
+    将原vector内容拷贝到新vector
+    new_finish = uninitialized_copy(start, position, new_start);
+    constuct(new_finish, x); //将new_finish处设为x
+    ++new_finish; //调整finish指针
+    destory(begin(), end()); //析构原vector
+    deallocate();
+    start = new_start; //调整迭代器指向新vector
+    finish = new_finish;
+    end_of_storage = new_start + len;
+}
+
+char* uninitialized_copy(char* f, *l, *result) {
+    memmove(result, f, l - f);
+    return result + (l - f); //重要
+}
