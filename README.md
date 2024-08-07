@@ -32,8 +32,6 @@ iterator必须有能力回答algorithm的提问
 
 ![iterator_extra_code2](list/iterator_extra_code2.png)
 
-========================
-
 # 探索vector
 
 ![vector_model](vector/vector_model.png)
