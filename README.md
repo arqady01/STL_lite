@@ -25,3 +25,9 @@ iterator必须有能力回答algorithm的提问
 定义一个萃取机制，使其有能力分辨是iterator还是pointer----利用偏特化即可解决
 
 ![iterator_extra](list/iterator_extra.jpg)
+
+![iterator_extra_code1](list/iterator_extra_code1.jpg)
+
+完整版：
+
+![iterator_extra_code2](list/iterator_extra_code2.jpg)
