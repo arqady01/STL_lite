@@ -26,8 +26,8 @@ iterator必须有能力回答algorithm的提问
 
 ![iterator_extra](list/iterator_extra.jpg)
 
-![iterator_extra_code1](list/iterator_extra_code1.jpg)
+![iterator_extra_code1](list/iterator_extra_code1.png)
 
 完整版：
 
-![iterator_extra_code2](list/iterator_extra_code2.jpg)
+![iterator_extra_code2](list/iterator_extra_code2.png)
