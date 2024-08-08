@@ -43,3 +43,21 @@ iterator必须有能力回答algorithm的提问
 **iterator的设计**
 
 ![vector_model](vector/iteratorGnuc4.png)
+
+# 深度探索Array
+
+**用法示例**
+
+```cpp
+std::array<int, 10> myArray;
+auto ite = myArray.begin();
+ite += 3;
+*ite;
+```
+
+**C++98版本**
+
+
+
+**C++14版本**
+
