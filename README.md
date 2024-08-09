@@ -95,5 +95,28 @@ iterator insert(iterator position, const value_type& x) {
 
 ![insert_aux](deque/insert_aux.png)
 
+```cpp
+//insert_aux()剩余的函数定义如下：
+
+reference operator[](size_type n) {
+    return start[difference_type(n)];
+}
+reference front() {
+    return *start;
+}
+reference back() {
+    //因为finish指向后一个元素的下一个位置
+    iterator tmp = finish;
+    --tmp; //--也要重载
+    return *tmp;
+}
+size_type size() {
+    return finish - start; //-已经重载过了
+}
+bool empty() {
+    return finish == start;
+}
+```
+
 **deque如何模拟连续空间？**
 
