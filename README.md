@@ -62,3 +62,7 @@ ite += 3;
 **C++14版本**
 
 ![14v](array/14v.png)
+
+# deque
+
+![98v](deque_code/deque_code.png)
