@@ -122,7 +122,7 @@ bool empty() {
 
 deque的自增/自减
 
-![operator+-](deque/operator+-.jpg)
+![operator+-](deque/operator+-.png)
 
 deque有连续加减功能
 
