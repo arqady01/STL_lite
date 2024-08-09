@@ -65,4 +65,4 @@ ite += 3;
 
 # deque
 
-![98v](deque_code/deque_code.png)
+![98v](deque/deque_code.png)
