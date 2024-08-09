@@ -93,5 +93,7 @@ iterator insert(iterator position, const value_type& x) {
 }
 ```
 
+![insert_aux](deque/insert_aux.png)
+
 **deque如何模拟连续空间？**
 
