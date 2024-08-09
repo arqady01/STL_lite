@@ -65,4 +65,6 @@ ite += 3;
 
 # deque
 
-![98v](deque/deque_code.png)
+![deque_iterator](deque/deque_iterator.png)
+
+![deque_code](deque/deque_code.png)
