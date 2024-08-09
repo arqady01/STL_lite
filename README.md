@@ -65,6 +65,33 @@ ite += 3;
 
 # deque
 
+**deque图示**
+
 ![deque_iterator](deque/deque_iterator.png)
 
+**deque类设计**
+
 ![deque_code](deque/deque_code.png)
+
+**deque<T>::insert()**
+
+说明：在迭代器position处安插一个元素，值为x。同时这也是迭代器智能的一种体现
+
+```cpp
+iterator insert(iterator position, const value_type& x) {
+    if (position.cur == start.cur) { //安插点在deque的最前端
+        push_front(x);
+        return start;
+    } else if (position.cur == finish.cur) { //尾插
+        push_back(x);
+        iterator tmp = finish;
+        --tmp;
+        return tmp;
+    } else {
+        return insert_aux(position, x);
+    }
+}
+```
+
+**deque如何模拟连续空间？**
+
