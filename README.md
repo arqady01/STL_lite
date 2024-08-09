@@ -120,6 +120,10 @@ bool empty() {
 
 **deque如何模拟连续空间？**
 
+deque的自增/自减
+
+![operator+-](deque/operator+-.jpg)
+
 deque有连续加减功能
 
 ![operator+=](deque/operator+=.jpg)
